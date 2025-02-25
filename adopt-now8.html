@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Max - Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+body {
+    background: url('https://www.shutterstock.com/image-vector/dog-seamless-pattern-paws-bones-600nw-2350264459.jpg') no-repeat center center/cover;
+    background-color: #b6c1ab;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #893a41;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Pet Info Section */
+.pet-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.pet-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.adoption-details {
+    background-color: #f6f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Personality Section */
+.personality-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.btn-adopt {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-adopt:hover {
+    background-color: #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-adopt {
+        width: auto;
+        margin: auto;
+    }
+}
+
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="hero">About Zuzu</div>
+
+    <div class="container">
+        <div class="pet-info">
+            <img src="https://www.dailypaws.com/thmb/Bh8ghGGVfIjzO3c9gUPGRZNuhfw=/528x528/filters:no_upscale():max_bytes(150000):strip_icc():focal(739x478:741x480)/toyer-looking-back-545773837-2000-f12d8bf0cad04f999d30c4aa71f5ed1d.jpg"
+                 alt="Toyger Zuzu" class="pet-img">
+            <div class="adoption-details">
+                <h2 class="text-success">Basic Information</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Name:</strong> Zuzu</li>
+                    <li><strong>Breed:</strong>Toyger</li>
+                    <li><strong>Weight:</strong> 4-5.5 kg(current)</li>
+                    <li><strong>Color:</strong> Golden-brown with black</li>
+                    <li><strong>Gender:</strong> Male</li>
+                    <li><strong>Age:</strong> 5 years </li>
+                </ul>
+                <h2 class="text-success">Pet Details</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Good with kids:</strong> Yes</li>
+                    <li><strong>Good with Dogs:</strong> Yes</li>
+                    <li><strong>Good with Cats:</strong> Yes</li>
+                    <li><strong>House Trained:</strong> Yes</li>
+                </ul>
+                <button class="btn btn-adopt w-100"> <a href="adoption-form.html" class="adopt-btn">Adopt Zuzu</a></button>
+            </div>
+        </div>
+
+        <div class="personality-section">
+            <h2>Personality</h2>
+            <p>Toyger cats are affectionate, intelligent, and playful. They are social, enjoy human interaction, and adapt well to families and other pets. Their energetic yet gentle nature makes them great companions......</p>
+        </div>
+    </div>
+</body>
+</html>

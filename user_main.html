@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Use for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link To JS -->
+    <script src="index.js" defer></script>
+    <!-- For Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link For Gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Gsap - Scroll Trigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Lenis - Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- Link For Split Type -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <title>Purrfect | Pet Adoption</title>
+  </head>
+  <body>
+    <!-- Navbar-->
+     <nav>
+        <a href="index.html" class="brand">
+            <h1>Purr<b class="accent">fect</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#requirements">Requirements</a>
+            <a href="index.html#pets">Pets</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#Stories">Stories</a>
+            <a href="index.html#contactUs">Contact Us</a>
+            <a href="#" class="shop-button">🛒 Shop</a>
+            <a href="pets-details.html">Adopt now</a>
+        </div>
+
+        <button class="btn-2 " onclick="window.location.href='contact.html'">
+          <!-- <p>Login/Signup</p> -->
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+     </nav>
+     <!-- Navbar End -->
+
+     <!-- Hero Page Section -->
+      <section class="heropage">
+        <div class="hero-headlines">
+            <h1>Find Your Purrfect Pet Soul Today!</h1>
+            <p>
+              Discover Your Perfect Companion in Our Selection of Loving Pets 
+              Available for Adoption.
+            </p>
+            <div class="hero-headlines-button">
+                <button class="btn-3">Our Pets</button>
+                <button class="btn-3 btn-transparent">Contact Us</button>
+            </div>
+        </div>
+        <div class="hero-images">
+            <img src="img/hero-img-1.jpg" alt="img" />
+            <img src="img/hero-img-2.jpg" alt="img" />
+            <img src="img/hero-img-3.jpg" alt="img" />
+        </div>
+    </section>
+    <!-- Hero Page Section End -->
+     
+    <!-- Requirements Section -->
+    <section class="requirements" id="requirements">
+        <div class="requirements-headlines">
+            <h1>Our Process For Adoption</h1>
+            <p>Our process is simple and filled with joy every step of the way:</p>
+
+            <div class="r-item-container">
+                <!-- r item 1 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #cbeb98;">
+                      <i class="fa-regular fa-newspaper"></i>
+                    </div>
+                    <h5>Submitting an application</h5>
+                </div>
+
+                <!-- r item 2 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #e0de8b;">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h5>Attending an online interview</h5>
+                </div>
+
+                <!-- r item 3 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #ce9475;">
+                      <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h5>Meeting the pet in person</h5>
+                </div>
+
+                <!-- r item 4 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #fa9e6c;">
+                      <i class="fa-solid fa-file-zipper"></i>
+                    </div>
+                    <h5>Signing an adoption agreement</h5>
+                </div>
+
+                <!-- r item 5 -->
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #9ff1d9;">
+                      <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h5>Congratulations on finding a match!</h5>
+                </div>
+            </div>
+        </div>
+        <img src="img/requirements-img.jpg" alt="img" />
+    </section>
+    <!-- Requirements Section End -->
+
+    <!-- Pets Section -->
+    <section class="pets" id="pets">
+        <div class="pets-headlines">
+            <i class="fa-solid fa-paw"></i>
+            <h1>Meet Your Soul Pets</h1>
+        </div>
+
+        <div class="pets-collection">
+            <div class="pet-item">
+                <img src="img/pet-item-1.jpg" alt="img" />
+                <h3>Disco Drool</h3>
+            </div>
+            <div class="pet-item">
+                <img src="img/pet-item-2.jpg" alt="img" />
+                <h3>Wiggleclaw</h3>
+            </div>
+            <div class="pet-item">
+                <img src="img/pet-item-3.jpg" alt="img" />
+                <h3>Mr. Coolpaws</h3>
+            </div>
+        </div>
+        <button class="btn-3 btn-pets">
+            <a href="pets-details.html" class="find-more-button" style="color:white;">Find More</a>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+        </button>
+    </section>
+    <!-- Pets Section Ends -->
+
+    <!-- About Section -->
+        <div class="about" id="about">
+     <div class="about-headlines">
+            <h1>About Us</h1>
+            <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="black" >
+                Purrfect is not just a 
+                <b>pet adoption website</b>; it's a heaven for both pets in search of
+                their forever homes and compassionate individuals ready to welcome
+                them with open arms.
+            </p>
+
+            <div class="about-info">
+                <div class="about-info-item">
+                    <h5>100+</h5>
+                    <h6>Saved Pets</h6>
+                </div>
+                <hr class="about-info-divider" />
+                <div class="about-info-item">
+                    <h5>100%</h5>
+                    <h6>Adoption Rate</h6>
+                </div>
+                <hr class="about-info-divider" />
+                <div class="about-info-item">
+                    <h5>5 Star</h5>
+                    <h6>Community Loved</h6>
+                </div>
+            </div>
+            <button class="btn-3" onclick="redirectToAuth()">Get Started</button>
+            <script>
+                function redirectToAuth() {
+                    window.location.href = "login-signup.html"; // Change this to your actual login/signup page URL
+                }
+            </script>
+        </div>
+        <img src="img/about-img.jpg" alt="img" />
+    </div>
+    <!-- About Section Ends -->
+
+    <!-- Stories section starts -->
+    <section class="pets" id="Stories">
+        <div class="pets-headlines">
+            <i class="fa-solid fa-paw"></i>
+            <h1>Heartwarming Stories from Our Customers</h1>
+        </div>
+    
+        <div class="pets-collection">
+            <div class="pet-item">
+                <h3>Emily & Bella</h3>
+                <p>"Adopting Bella has been the best decision of my life. She fills my days with joy and love. The adoption process was seamless and the team was so supportive!"</p>
+            </div>
+            
+            <div class="pet-item">
+                <h3>James & Rocky</h3>
+               
+                <p>"Rocky came into our lives at the perfect time. He has brought so much happiness into our home. The guidance from the adoption advisors made everything easy!"</p>
+            </div>
+            
+            <div class="pet-item">
+                <h3>Sophia & Whiskers</h3>
+               
+                <p>"Whiskers has been a blessing! The team helped us through every step, and now we can't imagine our home without him."</p>
+            </div>
+        </div>
+        
+        <button class="btn-3 btn-pets">
+            <p>Read More Stories</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+    </section>    
+    <!-- Stories section ends -->
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contactUs">
+        <div class="footer-container">
+            <!-- Left Section - Logo and About -->
+            <div class="footer-about">
+                <h2>Purr<b class="accent">fect</b></h2>
+                <p>Bringing loving pets and happy families together.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Middle Section - Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#requirements">Adoption Process</a></li>
+                    <li><a href="#pets">Pets</a></li>
+                    <li><a href="#stories">Stories</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Contact Information -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> support@purrfect.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> 123, Pet Adoption St, City, Country</p>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>© 2025 Purrfect. All Rights Reserved.</p>
+        </div>
+    </footer>
+  </body>
+</html>
+
+
+    

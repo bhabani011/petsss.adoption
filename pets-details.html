@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="filter-container">
+            <h2>Filters</h2>
+
+            <label for="pet-type">Choose a Pet Type:</label>
+            <select id="pet-type">
+                <option value="any">Any</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+            </select>
+
+            <label for="gender">Choose Gender:</label>
+            <select id="gender">
+                <option value="any">Any</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="breed">Choose Breed:</label>
+            <input type="text" id="breed">
+
+            <label for="age">Choose Age:</label>
+            <input type="number" id="age" min="0">
+
+            <label for="vaccination">Vaccination Status:</label>
+            <select id="vaccination">
+                <option value="any">Any</option>
+                <option value="vaccinated">Vaccinated</option>
+                <option value="not-vaccinated">Not Vaccinated</option>
+            </select>
+
+            <button onclick="applyFilter()">Apply Filter</button>
+        </div>
+
+        <div id="pet-container">
+            <!-- Filtered pet results will be shown here -->
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+  <h1>Pets Available for Adoption</h1>
+  <div class="pet-container">
+
+    <div class="pet-card">
+      <img src="https://cdn.shopify.com/s/files/1/1638/5471/files/why-are-pitbulls-so-strong-01_480x480.png?v=1691392142" alt="max">  <h2>MAX</h2>
+      <p><strong>Type:</strong> Dog</p>
+      <p><strong>Breed:</strong>Pitbull</p>
+      <p><strong>Age:</strong> 3</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+      <a href="adopt-now.html" class="adopt-btn">Adopt Now</a>
+     </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://images.litter-robot.com/media/magefan_blog/2018/11/classic-494x510.jpg" alt="TOM">  <h2>TOM</h2>
+      <p><strong>Type:</strong> CAT</p>
+      <p><strong>Breed:</strong> Tabby</p>
+      <p><strong>Age:</strong> 2</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+      <a href="adopt-now1.html" class="adopt-btn">Adopt Now</a>
+      </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://i.pinimg.com/736x/62/43/8a/62438a9552b8e9f22ece0cc0f1cd3564.jpg" alt="oddy">  <h2>ODDY</h2>
+      <p><strong>Type:</strong> Dog</p>
+      <p><strong>Breed:</strong> Telomian</p>
+      <p><strong>Age:</strong>5</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now2.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+    <div class="pet-card">
+      <img src="https://www.greencrossvets.com.au/wp-content/uploads/2022/01/Australian-Shepherd-2-e1641943485592-1024x1024.jpg" alt="mike">  <h2>MIKE</h2>
+      <p><strong>Type:</strong> Dog</p>
+      <p><strong>Breed:</strong> Australian Shepherds</p>
+      <p><strong>Age:</strong>6</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now3.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://images.squarespace-cdn.com/content/v1/5baffc59fb182025fee90fef/92442d27-b354-4240-b998-bcbe0f1cd91c/German-shepherd-training-main.jpg" alt="jully">  <h2>JULLY</h2>
+      <p><strong>Type:</strong> Dog</p>
+      <p><strong>Breed:</strong> German Shepherd</p>
+      <p><strong>Age:</strong>5</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now4.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://img.freepik.com/premium-photo/orange-white-persian-cat-sitting-down-white-background_893012-29177.jpg" alt="pussy">  <h2>PUSSY</h2>
+      <p><strong>Type:</strong> cat</p>
+      <p><strong>Breed:</strong> Persian</p>
+      <p><strong>Age:</strong>4</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now5.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+
+
+    <div class="pet-card">
+      <img src="https://cdn-aahmh.nitrocdn.com/mwIJloVUffDtKiCgRcivopdgojcJrVwT/assets/images/optimized/rev-31cad3f/www.cozycatfurniture.com/image/cache/siamese-cat-cover-200x200h.jpg" alt="daisy">  <h2>DAISY</h2>
+      <p><strong>Type:</strong> cat</p>
+      <p><strong>Breed:</strong> Siamese cat</p>
+      <p><strong>Age:</strong>4</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now6.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://www.newyorkbirdsupply.com/cdn/shop/products/lovebird-yellow-collared-blue-masked-390221_1200x1200.jpg?v=1694528322" alt="mitu">  <h2>MITU</h2>
+      <p><strong>Type:</strong> birds</p>
+      <p><strong>Breed:</strong>lovebirds </p>
+      <p><strong>Age:</strong>8</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now7.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://www.dailypaws.com/thmb/Bh8ghGGVfIjzO3c9gUPGRZNuhfw=/528x528/filters:no_upscale():max_bytes(150000):strip_icc():focal(739x478:741x480)/toyer-looking-back-545773837-2000-f12d8bf0cad04f999d30c4aa71f5ed1d.jpg" alt="zuzu">  <h2>ZUZU</h2>
+      <p><strong>Type:</strong> cat</p>
+      <p><strong>Breed:</strong>toyger cat</p>
+      <p><strong>Age:</strong>5</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now8.html" class="adopt-btn">Adopt Now</a>
+        </button>
+      </div>
+    <div class="pet-card">
+      <img src="https://premierpups.com/azure/premierphotos/pups/mini-goldendoodle-breed-information-premier-pups-637915902098319516.jpg?w=557&h=557&mode=crop&autorotate=1" alt="mini">  <h2>MINI</h2>
+      <p><strong>Type:</strong>Dog</p>
+      <p><strong>Breed:</strong> goldendoodle</p>
+      <p><strong>Age:</strong>4</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now9.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+
+    <div class="pet-card">
+      <img src="https://d128mjo55rz53e.cloudfront.net/media/images/blog-breed-scottish_fold_2.max-400x400.format-jpeg.jpg" alt="lily">  <h2>LILY</h2>
+      <p><strong>Type:</strong> cat</p>
+      <p><strong>Breed:</strong> Scottish Fold</p>
+      <p><strong>Age:</strong>6</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now10.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+ 
+    <div class="pet-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4D12AQESKzCI_frOuQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1667724162761?e=2147483647&v=beta&t=9LyeZ9xRfnO5HjwbuDXeioyFBwoxB8lf8ZBOMr9LJAM" alt="Ruby">  <h2>RUBY</h2>
+      <p><strong>Type:</strong> Dog</p>
+      <p><strong>Breed:</strong> Dachshund</p>
+      <p><strong>Age:</strong>6</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Adoption Status:</strong> Available</p>
+      <button>
+        <a href="adopt-now11.html" class="adopt-btn">Adopt Now</a>
+        </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

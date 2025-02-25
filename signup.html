@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background: url('https://www.shutterstock.com/image-vector/dog-seamless-pattern-paws-bones-600nw-2350264459.jpg') no-repeat center center/cover;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color : white;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4500;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        a {
+            color: #ff7f50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="email" class="input-field" placeholder="Email" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="password" class="input-field" placeholder="Confirm Password" required>
+        <button class="btn">Sign Up</button>
+        <p>Already have an account? <a href="login-signup.html">Login</a></p>
+    </div>
+</body>
+</html>
